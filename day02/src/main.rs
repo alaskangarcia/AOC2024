@@ -35,12 +35,11 @@ fn part1(level: &Vec<Vec<i32>>) -> i32{
     for lvl in level{
         if check(&lvl) {
             result = result +1;
-            continue
         }
     }
     result
 }
-`
+
 fn check(lvl: &Vec<i32>) -> bool{
     let mut res = false;
     let mut sorte = lvl.clone();
@@ -60,11 +59,7 @@ fn check(lvl: &Vec<i32>) -> bool{
 
 fn part2(level: &Vec<Vec<i32>>) -> i32{
     let mut result: i32 = 0;
-    for lvl in level{
-        if check(&lvl) {
-            result = result + 1;
-            continue
-        } 
+    for lvl in level{   
         for i in 0..lvl.len() {
             let mut a = lvl.clone();
             a.remove(i);
