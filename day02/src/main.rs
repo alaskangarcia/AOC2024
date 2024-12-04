@@ -7,7 +7,7 @@ fn main() -> std::io::Result<()> {
     println!("Part 1: {}", part1(&level));
     println!("Part 2: {}", part2(&level));
    
-   Ok(())
+    Ok(())
 }
 
 
